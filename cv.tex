@@ -1,0 +1,154 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+% 
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+% 
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+% 
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% ----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% ----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Gill Sans Light]
+{Gill Sans Light} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage[brazilian]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+
+
+\usepackage{fontspec}
+\makeatletter
+\newlength\fake@f
+\newlength\fake@c
+\def\fakesc#1{%
+  \begingroup%
+  \xdef\fake@name{\csname\curr@fontshape/\f@size\endcsname}%
+  \fontsize{\fontdimen8\fake@name}{\baselineskip}\selectfont%
+  \uppercase{#1}%
+  \endgroup%
+}
+\makeatother
+
+\renewcommand{\textsc}{\fakesc}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+% ----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+% ----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Pedro \textsc{Brito}}\bigskip\par} % Your name
+
+\section{Dados Pessoais}
+
+\begin{tabular}{rl}
+  \textsc{Nome Completo:} & Pedro Emílio Machado de Brito\\
+  %\textsc{Local e Data de Nascimento:} & Belo Horizonte, Minas Gerais | 1994-06-13 \\
+  \textsc{Endereço:} & Rua Dr. Ruy Vicente de Mello, 1115\\
+  & Cidade Universitária, Campinas -- SP \\
+  \textsc{Telefone:} & (19) 99873-0963\\
+  \textsc{E-mail:} & \href{mailto:pedroembrito@gmail.com}{pedroembrito@gmail.com}
+\end{tabular}
+
+% ----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+% ----------------------------------------------------------------------------------------
+
+\section{Experiências}
+
+\begin{tabular}{r|p{11cm}}
+  \emph{Presente} & \textbf{Coordenador Tecnológico} no Centro Acadêmico da Computação \\
+ \textsc{Outubro de 2012} & \footnotesize{Administro um servidor web, implantei o sistema de vigilância.}\\
+\multicolumn{2}{c}{} \\
+
+\emph{Presente} & \textbf{Bolsista PAD} de MC202 (Estruturas de Dados)\\
+\textsc{Agosto de 2013} &  \emph{Prof. Guilherme P. Telles}\\
+& \footnotesize {Auxilio os alunos na codificação dos laboratórios, administro uma lista de e-mails da disciplina, faço a correção dos laboratórios de duas turmas.}\\
+\multicolumn{2}{c}{}\\
+
+\end{tabular}
+
+
+% ----------------------------------------------------------------------------------------
+%	EDUCATION
+% ----------------------------------------------------------------------------------------
+
+\section{Formação}
+
+\begin{tabular}{r|l}	
+
+  \textsc{2016} & Graduação em \textsc{}\textbf{Engenharia de Computação}, \small\emph{Sistemas de Computação}\\
+& \normalsize\textsc{Universidade Estadual de Campinas}\\
+\multicolumn{2}{c}{}\\
+  % ------------------------------------------------
+
+  \textsc{2011} & \textbf{Ensino Médio}\\ & \textsc{Colégio Marista Diocesano}
+\end{tabular}
+
+
+% ----------------------------------------------------------------------------------------
+%	Línguas
+% ----------------------------------------------------------------------------------------
+
+\section{Idiomas}
+
+\begin{tabular}{rl}
+  \textbf{Inglês:} & Fluente para leitura, intermediário para escrita e conversação.\\
+\end{tabular}
+
+% ----------------------------------------------------------------------------------------
+%       Competências
+% ----------------------------------------------------------------------------------------
+
+\section{Competências}
+
+\begin{tabular}{rl}
+  Conhecimentos básicos: & C++, Java, Python, \setmainfont{cmr10}{\fb \LaTeX} \setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin Sans}
+  \\
+
+  Conhecimentos intermediários: & C, GNU/Linux \\
+\end{tabular}
+
+
+\end{document}
