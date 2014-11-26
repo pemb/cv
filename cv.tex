@@ -1,34 +1,10 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Plasmati Graduate CV
-% LaTeX Template
-% Version 1.0 (24/3/13)
-% 
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-% 
-% Original author:
-% Alessandro Plasmati (alessandro.plasmati@gmail.com)
-% 
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-% 
-% Important note:
-% This template needs to be compiled with XeLaTeX.
-% The main document font is called Fontin and can be downloaded for free
-% from here: http://www.exljbris.com/fontin.html
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-% ----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-% ----------------------------------------------------------------------------------------
+\documentclass[a4paper,10pt]{article}
 
-\documentclass[a4paper,10pt]{article} % Default font size and paper size
-
-\usepackage{fontspec} % For loading fonts
+\usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[SmallCapsFont = Gill Sans Light]
-{Gill Sans Light} % Main document font
+{Gill Sans Light}
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
@@ -38,20 +14,18 @@
 
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
 
-\usepackage[brazilian]{babel}
-% \usepackage[utf8]{inputenc}
-% \usepackage[T1]{fontenc}
-
-
-\usepackage{hyperref} % Required for adding links	and customizing them
-\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\usepackage[
+pdfauthor={Pedro E. M. Brito},
+pdftitle={Pedro Brito's CV}]
+{hyperref} 
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titleformat{\section}{\Large\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
-
+\usepackage{tabularx}
 
 \usepackage{fontspec}
 \makeatletter
@@ -72,88 +46,78 @@
 
 \pagestyle{empty} % Removes page numbering
 
-\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+\par{\centering{\Huge Pedro \textsc{Brito}}\bigskip\par}
 
-% ----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION
-% ----------------------------------------------------------------------------------------
+\section{Personal Info}
 
-\par{\centering{\Huge Pedro \textsc{Brito}}\bigskip\par} % Your name
+ \begin{tabularx}{\textwidth}{ rl}
+ \textsc{Full name:} &
+                       Pedro Emílio Machado de Brito \\
+    \textsc{Phone:} &
+                      +55 (19) 99873-0963 \\
+    \textsc{Email:} &
+                      \href{mailto:pedroembrito@gmail.com}{pedroembrito@gmail.com}\\
+    \footnotesize{pemb @:} &
+                       \href{https://github.com/pemb/}{GitHub}, \href{https://bitbucket.org/pemb}{Bitbucket}\\
+\end{tabularx}
 
-\section{Dados Pessoais}
-
-\begin{tabular}{rl}
-  \textsc{Nome Completo:} & Pedro Emílio Machado de Brito\\
-  %\textsc{Local e Data de Nascimento:} & Belo Horizonte, Minas Gerais | 1994-06-13 \\
-  \textsc{Endereço:} & Rua Engenheiro Humberto Soares Camargo, 202\\
-  & Cidade Universitária, Campinas -- SP \\
-  \textsc{Telefone:} & (19) 99873-0963\\
-  \textsc{E-mail:} & \href{mailto:pedroembrito@gmail.com}{pedroembrito@gmail.com}
-\end{tabular}
-
-% ----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE 
-% ----------------------------------------------------------------------------------------
-
-\section{Experiências}
+\section{Experience}
 
 \begin{tabular}{r|p{11cm}}
-  \emph{Presente} & \textbf{Presidente} no Centro Acadêmico da Computação \\
- \textsc{Novembro de 2013} & \footnotesize{Diversas tarefas administrativas e de liderança.}\\
-\multicolumn{2}{c}{} \\
 
-  \emph{Novembro de 2013} & \textbf{Coordenador Tecnológico} no Centro Acadêmico da Computação \\
- \textsc{Outubro de 2012} & \footnotesize{Administrar um servidor web, implantação de um sistema de vigilância.}\\
-\multicolumn{2}{c}{} \\
+  \emph{Present} & \textbf{Financial Coordinator} at \href{http://www.caco.ic.unicamp.br}{CACo} (the Computing Students' Union) \\
+  \textsc{November 2014} & \footnotesize{Handled day-to-day bookkeeping and kept financial records.}\\
+  \multicolumn{2}{c}{} \\
 
-\emph{Dezembro de 2013} & \textbf{Bolsista PAD} da disciplina MC202 (Estruturas de Dados)\\
-\textsc{Agosto de 2013} &  \emph{Prof. Guilherme P. Telles}\\
-& \footnotesize {Auxiliar os alunos na codificação dos laboratórios, administrar uma lista de e-mails da disciplina, avaliar laboratórios de duas turmas.}\\
-\multicolumn{2}{c}{}\\
+  \emph{Present} & \textbf{Undergraduate T.A.}, MC602 (Logic Circuits and Computer Organization)\\
+  \textsc{September 2014} &  \href{http://www.ic.unicamp.br/~cortes/}{\emph{Prof. Mario L. Côrtes}}\\
+                 & \footnotesize {Held office hours, answered emails, graded assigments, helped elaborate exams.}\\
+  \multicolumn{2}{c}{}\\
+
+  \emph{November 2014} & \textbf{President} at CACo \\
+  \textsc{November 2013} & \footnotesize{Various administrative and leadership tasks, held weekly meetings and represented the student body. }\\
+  \multicolumn{2}{c}{} \\
+
+  \emph{December 2013} & \textbf{Undergraduate T.A.},  MC202 (Data Structures)\\
+  \textsc{August 2013} &  \href{http://ic.unicamp.br/~gpt/}{\emph{Prof. Guilherme P. Telles}}\\
+                 & \footnotesize {Helped students with their programming assignments, managed a mailing list, answered emails, graded programming assignments.}\\
+  \multicolumn{2}{c}{}\\
+
+  \emph{November 2013} & \textbf{Tech Coordinator} at CACo \\
+  \textsc{October 2012} & \footnotesize{Administered a web server, deployed a webcam surveillance system.}\\
+  \multicolumn{2}{c}{} \\
+
 
 \end{tabular}
 
+\section{Education}
 
-% ----------------------------------------------------------------------------------------
-%	EDUCATION
-% ----------------------------------------------------------------------------------------
+\begin{tabularx}{\textwidth}{r|Xr}	
 
-\section{Formação}
+  \emph{Ongoing} & B. Sc. in \textsc{}\textbf{Computer Science} & {\tiny Expected graduation: 2017}\\
+  \textsc{2012} & \textsc{State University of Campinas, Institute of Computing}\\ 
+  \multicolumn{2}{c}{}\\
 
-\begin{tabular}{r|l}	
+  \emph{2011} & \textbf{Secondary School}\\
+  \textsc{2009} & \textsc{Colégio Marista Diocesano}
+\end{tabularx}
 
-  \textsc{2016} & Graduação em \textsc{}\textbf{Engenharia de Computação}, \small\emph{Sistemas de Computação}\\
-  & \normalsize\textsc{Universidade Estadual de Campinas}\\
-\multicolumn{2}{c}{}\\
-  % ------------------------------------------------
+\section{Languages}
 
-  \textsc{2011} & \textbf{Ensino Médio}\\ & \textsc{Colégio Marista Diocesano}
-\end{tabular}
+\begin{tabularx}{\textwidth}{rXr}
+  \textbf{Portuguese:} & Native.\\
+  \textbf{English:} & Fluent. & {\tiny TOEFL score: 110} \\
+\end{tabularx}
+
+\section{Skills}
+
+ \begin{tabular}{rl}
+   Basic knowledge:    &  VHDL, ARM assembly, POSIX threads, Java\\
+\\
+   Fair knowledge:     &  C/C++, Python, {\fontfamily{lmr}\selectfont \LaTeX}, Emacs, git, shell scripts,\\
+&                         Unix utilities, GNU/Linux system administration\\
 
 
-% ----------------------------------------------------------------------------------------
-%	Línguas
-% ----------------------------------------------------------------------------------------
-
-\section{Idiomas}
-
-\begin{tabular}{rl}
-  \textbf{Português:} & Nativo.\\
-  \textbf{Inglês:} & Fluente para leitura e escrita, intermediário para conversação.\\
-\end{tabular}
-
-% ----------------------------------------------------------------------------------------
-%       Competências
-% ----------------------------------------------------------------------------------------
-
-\section{Competências}
-
-\begin{tabular}{rl}
-  Conhecimentos básicos: & C++, Java, Python, \setmainfont{cmr10}{\fb \LaTeX} \setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin Sans}
-  \\
-
-  Conhecimentos intermediários: & C, GNU/Linux \\
-\end{tabular}
-
+ \end{tabular}
 
 \end{document}
