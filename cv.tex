@@ -10,7 +10,9 @@
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
-\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+
+\usepackage{fullpage}
 
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
 
@@ -54,67 +56,83 @@ pdftitle={Pedro Brito's CV}]
  \textsc{Full name:} &
                        Pedro Emílio Machado de Brito \\
     \textsc{Phone:} &
-                      +55 (19) 99873-0963 \\
+                      +1 (615) 839-0270 \\
+                      &+55 (19) 99873-0963 \\
     \textsc{Email:} &
                       \href{mailto:pedroembrito@gmail.com}{pedroembrito@gmail.com}\\
     \footnotesize{pemb @} &
                        \href{https://github.com/pemb/}{GitHub}, \href{https://bitbucket.org/pemb}{Bitbucket}\\
 \end{tabularx}
 
+\section{Objective}
+
+Relentless problem solver and bug exterminator on one side, efficient and meticulous programmer on the other, I'm looking forward to work on high performance applications, especially wh
+
+\section{Education}
+
+\begin{tabularx}{\textwidth}{r|Xr}	
+
+  \emph{2016} & Exchange program, studying \textsc{}\textbf{Computer Science} & \\
+  \textsc{2015} & at \textsc{Vanderbilt University, School of Engineering}\\ 
+  \multicolumn{2}{c}{}\\
+
+  \emph{Ongoing} & B. Sc. in \textsc{}\textbf{Computer Science} & {\tiny Took leave of absence for exchange program, expected graduation in 2017}\\
+  \textsc{2012} & at \textsc{State University of Campinas, Institute of Computing}\\ 
+  \multicolumn{2}{c}{}\\
+
+\end{tabularx}
+
+\section{Skills}
+
+ \begin{tabular}{rl}
+   Basic knowledge:    &  ARM assembly, Lisp, Prolog, Java \\\\
+   Some knowledge:     &  VHDL, Java, C++, Python, {\fontfamily{lmr}\selectfont \LaTeX}, Emacs, git, shell scripts, POSIX threads, OpenMP, MPI, CUDA\\\\
+   Fair knowledge:     &  C, Unix utilities, GNU/Linux system administration\\
+ \end{tabular}
+
 \section{Experience}
 
 \begin{tabular}{r|p{11cm}}
 
-  \emph{Present} & \textbf{Financial Coordinator} at \href{http://www.caco.ic.unicamp.br}{CACo} (the Computing Students' Union) \\
-  \textsc{November 2014} & \footnotesize{Handled day-to-day bookkeeping and kept financial records.}\\
+    \emph{August 2015} & \textbf{Undergraduate research project}\\
+  \textsc{December 2014} & under \href{http://www.ic.unicamp.br/~cortes/}{\emph{Prof. Mario L. Côrtes}} \href{http://guidoaraujo.wordpress.com/}{\emph{Prof. Guido Araújo}}\\
+                 & \footnotesize {Investigated memory integrity issues in embedded devices, including IoT applications.}\\
   \multicolumn{2}{c}{} \\
 
-  \emph{Present} & \textbf{Undergraduate T.A.}, MC602 (Logic Circuits and Computer Organization)\\
-  \textsc{September 2014} &  \href{http://www.ic.unicamp.br/~cortes/}{\emph{Prof. Mario L. Côrtes}}\\
+  \emph{August 2015} & \textbf{Financial Coordinator} at \href{http://www.caco.ic.unicamp.br}{CACo} (the Computing Students' Union) \\
+  \textsc{November 2014} & \footnotesize{Handled bookkeeping and financial matters.}\\
+  \multicolumn{2}{c}{} \\
+
+  \emph{July 2015} & \textbf{Undergraduate T.A.}, MC613 (Digital Circuits Laboratory)\\
+  \textsc{February 2015} & under \href{http://guidoaraujo.wordpress.com/}{\emph{Prof. Guido Araújo}}\\
+                 & \footnotesize {Helped students with assigments, answered emails, graded quizzes, helped elaborate exams.}\\
+  \multicolumn{2}{c}{}\\
+
+  \emph{December 2014} & \textbf{Undergraduate T.A.}, MC602 (Logic Circuits and Computer Organization)\\
+  \textsc{September 2014} & under \href{http://www.ic.unicamp.br/~cortes/}{\emph{Prof. Mario L. Côrtes}}\\
                  & \footnotesize {Held office hours, answered emails, graded assigments, helped elaborate exams.}\\
   \multicolumn{2}{c}{}\\
 
   \emph{November 2014} & \textbf{President} at CACo \\
-  \textsc{November 2013} & \footnotesize{Held weekly meetings with members, represented the student body in pursuit of our interests, carried out various administrative tasks.}\\
+  \textsc{November 2013} & \footnotesize{Held weekly meetings, carried out various administrative tasks.}\\
   \multicolumn{2}{c}{} \\
 
   \emph{December 2013} & \textbf{Undergraduate T.A.},  MC202 (Data Structures)\\
-  \textsc{August 2013} &  \href{http://ic.unicamp.br/~gpt/}{\emph{Prof. Guilherme P. Telles}}\\
-                 & \footnotesize {Helped students with their programming assignments, managed a mailing list, answered emails, graded programming assignments.}\\
+  \textsc{August 2013} & under \href{http://ic.unicamp.br/~gpt/}{\emph{Prof. Guilherme P. Telles}}\\
+                 & \footnotesize {Helped students with assignments, managed a mailing list, answered emails, graded assignments.}\\
   \multicolumn{2}{c}{}\\
 
   \emph{November 2013} & \textbf{Tech Coordinator} at CACo \\
   \textsc{October 2012} & \footnotesize{Administered a web server, deployed a webcam surveillance system.}\\
   \multicolumn{2}{c}{} \\
 
-
 \end{tabular}
 
-\section{Education}
+% \section{Languages}
 
-\begin{tabularx}{\textwidth}{r|Xr}	
-
-  \emph{Ongoing} & B. Sc. in \textsc{}\textbf{Computer Science} & {\tiny Expected graduation: 2017}\\
-  \textsc{2012} & \textsc{State University of Campinas, Institute of Computing}\\ 
-  \multicolumn{2}{c}{}\\
-
-  \emph{2011} & \textbf{Secondary School}\\
-  \textsc{2009} & \textsc{Colégio Marista Diocesano}
-\end{tabularx}
-
-\section{Languages}
-
-\begin{tabularx}{\textwidth}{rXr}
-  \textbf{Portuguese:} & Native.\\
-  \textbf{English:} & Fluent. & {\tiny TOEFL score: 110} \\
-\end{tabularx}
-
-\section{Skills}
-
- \begin{tabular}{rl}
-   Basic knowledge:    &  VHDL, ARM and MIPS assembly, Common Lisp, Prolog, Java\\\\
-   Fair knowledge:     &  C++, Python, {\fontfamily{lmr}\selectfont \LaTeX}, Emacs, git, shell scripts, POSIX threads\\\\
-   Deep knowledge:     &  C, Unix utilities, GNU/Linux system administration\\
- \end{tabular}
+% \begin{tabularx}{\textwidth}{rXr}
+%   \textbf{Portuguese:} & Native.\\
+%   \textbf{English:} & Fluent. & {\tiny TOEFL score: 110} \\
+% \end{tabularx}
 
 \end{document}
