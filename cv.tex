@@ -13,12 +13,13 @@
 %\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
 
 \usepackage{fullpage}
+\usepackage{microtype}
 
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
 
 \usepackage[
 pdfauthor={Pedro E. M. Brito},
-pdftitle={Pedro Brito's CV}]
+pdftitle={Pedro Brito's resume}]
 {hyperref} 
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
@@ -53,31 +54,29 @@ pdftitle={Pedro Brito's CV}]
 \section{Personal Info}
 
  \begin{tabularx}{\textwidth}{ rl}
- \textsc{Full name:} &
-                       Pedro Emílio Machado de Brito \\
-    \textsc{Phone:} &
-                      +1 (615) 839-0270 \\
-                      &+55 (19) 99873-0963 \\
-    \textsc{Email:} &
-                      \href{mailto:pedroembrito@gmail.com}{pedroembrito@gmail.com}\\
-    \footnotesize{pemb @} &
-                       \href{https://github.com/pemb/}{GitHub}, \href{https://bitbucket.org/pemb}{Bitbucket}\\
+ \textsc{Full name:} & Pedro Emílio Machado de Brito \\
+    \textsc{Phone:} & +1 (615) 839-0270 \\
+%                      &+55 (19) 99873-0963 \\
+    \textsc{Email:} & \href{mailto:pedroembrito@gmail.com}{pedroembrito@gmail.com}\\
+    \footnotesize{pemb @} & \href{https://github.com/pemb/}{GitHub}, \href{https://bitbucket.org/pemb}{Bitbucket}\\
 \end{tabularx}
 
 \section{Objective}
 
-Relentless problem solver and bug exterminator on one side, efficient and meticulous programmer on the other, I'm looking forward to work on high performance applications, especially wh
+I'm an efficient and meticulous programmer on one side, relentless problem solver and debugger on the other, with a good background in algorithms and data structures, and experience with debugging tools and techniques.
+
+I'm eager to work on high performance (possibly parallel) software, especially where knowledge of the underlying architectural issues is essential to good results. I'm also interested in FPGA programming and kernel development.
 
 \section{Education}
 
-\begin{tabularx}{\textwidth}{r|Xr}	
+\begin{tabularx}{\textwidth}{r|X}	
 
-  \emph{2016} & Exchange program, studying \textsc{}\textbf{Computer Science} & \\
-  \textsc{2015} & at \textsc{Vanderbilt University, School of Engineering}\\ 
+  \emph{2016} & \textsc{}\textbf{Computer Science} transient student in an exchange program  \\
+  \textsc{2015} & \textsc{Vanderbilt University, School of Engineering}, Nashville, Tennessee.\\ 
   \multicolumn{2}{c}{}\\
 
-  \emph{Ongoing} & B. Sc. in \textsc{}\textbf{Computer Science} & {\tiny Took leave of absence for exchange program, expected graduation in 2017}\\
-  \textsc{2012} & at \textsc{State University of Campinas, Institute of Computing}\\ 
+  \emph{Ongoing} & B. Sc. in \textsc{}\textbf{Computer Science} {\tiny Took leave of absence for exchange program, expected graduation in 2017} \\
+  \textsc{2012} & \textsc{State University of Campinas, Computing Institute}, Campinas, Brazil.\\ 
   \multicolumn{2}{c}{}\\
 
 \end{tabularx}
@@ -85,9 +84,10 @@ Relentless problem solver and bug exterminator on one side, efficient and meticu
 \section{Skills}
 
  \begin{tabular}{rl}
-   Basic knowledge:    &  ARM assembly, Lisp, Prolog, Java \\\\
-   Some knowledge:     &  VHDL, Java, C++, Python, {\fontfamily{lmr}\selectfont \LaTeX}, Emacs, git, shell scripts, POSIX threads, OpenMP, MPI, CUDA\\\\
-   Fair knowledge:     &  C, Unix utilities, GNU/Linux system administration\\
+   Fair knowledge:     &  C, Unix utilities, GNU/Linux systems, algorithms and data structures \\\\
+   Some knowledge:     &  C++, Python, VHDL, Java, {\fontfamily{lmr}\selectfont \LaTeX}, git, scripts, pthreads, OpenMP, MPI, CUDA\\\\
+   Basic knowledge:    &  ARM assembly, Lisp, Prolog, SQL, Lua, Haskell, MATLAB, sockets programming\\
+
  \end{tabular}
 
 \section{Experience}
@@ -95,44 +95,29 @@ Relentless problem solver and bug exterminator on one side, efficient and meticu
 \begin{tabular}{r|p{11cm}}
 
     \emph{August 2015} & \textbf{Undergraduate research project}\\
-  \textsc{December 2014} & under \href{http://www.ic.unicamp.br/~cortes/}{\emph{Prof. Mario L. Côrtes}} \href{http://guidoaraujo.wordpress.com/}{\emph{Prof. Guido Araújo}}\\
-                 & \footnotesize {Investigated memory integrity issues in embedded devices, including IoT applications.}\\
+  \textsc{December 2014} & under \href{http://www.ic.unicamp.br/~cortes/}{\emph{Prof. Mario L. Côrtes}} and \href{http://guidoaraujo.wordpress.com/}{\emph{Prof. Guido Araújo}}\\
+                 & \footnotesize {Investigated security issues around memory integrity in embedded devices, including IoT applications.}\\
   \multicolumn{2}{c}{} \\
 
-  \emph{August 2015} & \textbf{Financial Coordinator} at \href{http://www.caco.ic.unicamp.br}{CACo} (the Computing Students' Union) \\
-  \textsc{November 2014} & \footnotesize{Handled bookkeeping and financial matters.}\\
+  \emph{2012 -- 2015} & Various positions at \href{http://www.caco.ic.unicamp.br}{CACo} (the Computing Students' Union) \\
+  \textsc{2014 -- 2015} & \footnotesize{\textbf{Financial coordinator}: Handled bookkeeping and financial matters.}\\
+  \textsc{2013 -- 2014} & \footnotesize{\textbf{President}: Held weekly meetings, carried out various administrative tasks.}\\
+  \textsc{2012 -- 2013} & \footnotesize{\textbf{Tech coordinator}: Administered small servers, deployed a surveillance system.}\\
   \multicolumn{2}{c}{} \\
 
-  \emph{July 2015} & \textbf{Undergraduate T.A.}, MC613 (Digital Circuits Laboratory)\\
-  \textsc{February 2015} & under \href{http://guidoaraujo.wordpress.com/}{\emph{Prof. Guido Araújo}}\\
-                 & \footnotesize {Helped students with assigments, answered emails, graded quizzes, helped elaborate exams.}\\
+  \emph{2013 -- 2015} & \textbf{Undergraduate T.A.} in undergraduate classes \\
+  \textsc{Spring 2015} & \footnotesize{Digital Circuits Laboratory, under \href{http://guidoaraujo.wordpress.com/}{\emph{Prof. Guido Araújo}}}\\
+  \textsc{Fall 2014} & \footnotesize{Logic Circuits and Computer Organization, under \href{http://www.ic.unicamp.br/~cortes/}{\emph{Prof. Mario L. Côrtes}}}\\
+  \textsc{Fall 2013} & \footnotesize{Data Structures, under \href{http://ic.unicamp.br/~gpt/}{\emph{Prof. Guilherme P. Telles}}}\\
   \multicolumn{2}{c}{}\\
-
-  \emph{December 2014} & \textbf{Undergraduate T.A.}, MC602 (Logic Circuits and Computer Organization)\\
-  \textsc{September 2014} & under \href{http://www.ic.unicamp.br/~cortes/}{\emph{Prof. Mario L. Côrtes}}\\
-                 & \footnotesize {Held office hours, answered emails, graded assigments, helped elaborate exams.}\\
-  \multicolumn{2}{c}{}\\
-
-  \emph{November 2014} & \textbf{President} at CACo \\
-  \textsc{November 2013} & \footnotesize{Held weekly meetings, carried out various administrative tasks.}\\
-  \multicolumn{2}{c}{} \\
-
-  \emph{December 2013} & \textbf{Undergraduate T.A.},  MC202 (Data Structures)\\
-  \textsc{August 2013} & under \href{http://ic.unicamp.br/~gpt/}{\emph{Prof. Guilherme P. Telles}}\\
-                 & \footnotesize {Helped students with assignments, managed a mailing list, answered emails, graded assignments.}\\
-  \multicolumn{2}{c}{}\\
-
-  \emph{November 2013} & \textbf{Tech Coordinator} at CACo \\
-  \textsc{October 2012} & \footnotesize{Administered a web server, deployed a webcam surveillance system.}\\
-  \multicolumn{2}{c}{} \\
 
 \end{tabular}
 
-% \section{Languages}
+ \section{Languages}
 
-% \begin{tabularx}{\textwidth}{rXr}
-%   \textbf{Portuguese:} & Native.\\
-%   \textbf{English:} & Fluent. & {\tiny TOEFL score: 110} \\
-% \end{tabularx}
+ \begin{tabularx}{\textwidth}{rXr}
+   \textbf{English:} & Fluent. \\
+   \textbf{Portuguese:} & Native language.\\
+ \end{tabularx}
 
 \end{document}
