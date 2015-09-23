@@ -10,7 +10,7 @@
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
-%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% \usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
 
 \usepackage{fullpage}
 \usepackage{microtype}
@@ -19,7 +19,7 @@
 
 \usepackage[
 pdfauthor={Pedro E. M. Brito},
-pdftitle={Pedro Brito's resume}]
+pdftitle={Pedro Brito's résumé}]
 {hyperref} 
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
@@ -53,56 +53,50 @@ pdftitle={Pedro Brito's resume}]
 
 \section{Personal Info}
 
- \begin{tabularx}{\textwidth}{ rl}
- \textsc{Full name:} & Pedro Emílio Machado de Brito \\
-    \textsc{Phone:} & (615) 839-0270 \\
-%                      &+55 (19) 99873-0963 \\
-    \textsc{Email:} & \href{mailto:pedroembrito@gmail.com}{pedroembrito@gmail.com}\\
-    \footnotesize{pemb @} & \href{https://github.com/pemb/}{GitHub}, \href{https://bitbucket.org/pemb}{Bitbucket}\\
+\begin{tabularx}{\textwidth}{ rl}
+  \textsc{Full name:} & Pedro Emílio Machado de Brito \\
+  \textsc{Phone:} & (615) 839-0270 \\
+  % +55 (19) 99873-0963 \\
+  \textsc{Email:} & \href{mailto:pedroembrito@gmail.com}{pedroembrito@gmail.com}\\
+  \footnotesize{pemb @} & \href{https://github.com/pemb/}{GitHub}, \href{https://bitbucket.org/pemb}{Bitbucket}, \href{https://gitlab.com/pemb}{GitLab}\\
 \end{tabularx}
 
-\section{Objective}
+\section{Summary}
 
-An efficient and meticulous programmer on one side, relentless problem solver and debugger on the other, with a good background in algorithms and data structures, and experience with debugging tools and techniques.
+An efficient and meticulous programmer on one side, relentless problem solver and debugger on the other, with a good background in algorithms and data structures, experience with debugging tools and techniques, as well as knowledge of other development tools such as profilers, build automation and version control systems.
 
-I'm eager to work on high performance (possibly parallel) software, especially where knowledge of the underlying architectural issues is essential to good results. I'm also interested in FPGA programming and kernel development.
-
-\section{Skills}
-
- \begin{tabular}{rl}
-   Fair knowledge:     &  C, Unix utilities, GNU/Linux systems, algorithms and data structures \\\\
-   Some knowledge:     &  C++, Python, VHDL, Java, {\fontfamily{lmr}\selectfont \LaTeX}, git, scripts, pthreads, OpenMP, MPI, CUDA\\\\
-   Basic knowledge:    &  ARM assembly, Lisp, Prolog, SQL, Lua, Haskell, MATLAB, socket programming\\
-
- \end{tabular}
+% I'm eager to work on high performance (possibly parallel) software, especially where knowledge of the underlying architectural issues is essential to good results. I'm also interested in FPGA programming and kernel development.
 
 \section{Education}
 
 \begin{tabularx}{\textwidth}{r|X}	
 
-  \emph{2016} & \textsc{}\textbf{Computer Science} transient student in an exchange program  \\
-  \textsc{2015} & at \textsc{Vanderbilt University,} \footnotesize{in Nashville, Tennessee.}\\
+  \emph{2016} & \textsc{}\textbf{Computer Science} exchange student as a \textbf{Brazilian Scientific Mobility Program} grantee  \\
+  \textsc{2015} & at \textsc{Vanderbilt University,} \footnotesize{in Nashville, Tennessee, USA.}\\
   \multicolumn{2}{c}{}\\
 
-  \emph{Ongoing} & B. Sc. in \textsc{}\textbf{Computer Science} {\tiny Took leave of absence for exchange program, expected graduation in 2017} \\
-  \textsc{2012} & at \textsc{State University of Campinas (Unicamp),} \footnotesize{in Campinas, Brazil.}\\
+  \emph{Ongoing} & Bachelor of \textsc{}\textbf{Computer Science} {\tiny Took leave of absence for exchange program, expected graduation in 2017} \\
+  \textsc{2012} & at \textsc{Universidade Estadual de Campinas (Unicamp),} \footnotesize{in Campinas, São Paulo, Brazil.}\\
   \multicolumn{2}{c}{}\\
 
 \end{tabularx}
+
+\section{Skills}
+
+\begin{tabular}{rl}
+  Fair knowledge:     &  C, Unix utilities, GNU/Linux systems, algorithms, data structures\\\\
+  Some knowledge:     &  C++, Python, VHDL, {\fontfamily{lmr}\selectfont \LaTeX}, git, make, gperf, pthreads, OpenMP, CUDA\\\\
+  Basic knowledge:    &  Java, Lisp, SQL, Lua, Haskell, ARM assembly, MATLAB, MPI, Intel VTune\texttrademark{}\\
+
+\end{tabular}
 
 \section{Experience}
 
 \begin{tabular}{r|p{11cm}}
 
-    \emph{August 2015} & \textbf{Undergraduate research project} at Unicamp\\
+  \emph{August 2015} & \textbf{Undergraduate research project} at Unicamp\\
   \textsc{February 2015} & under \href{http://www.ic.unicamp.br/~cortes/}{\emph{Prof. Mario L. Côrtes}} and \href{http://guidoaraujo.wordpress.com/}{\emph{Prof. Guido Araújo}}\\
-                 & \footnotesize {Investigated security issues around memory integrity in embedded devices, including IoT applications.}\\
-  \multicolumn{2}{c}{} \\
-
-  \emph{2012 -- 2015} & Various positions at \href{http://www.caco.ic.unicamp.br}{CACo} \footnotesize{(the Computing Students' Union at Unicamp)} \\
-  \textsc{2014 -- 2015} & \footnotesize{\textbf{Financial coordinator}: Handled bookkeeping and financial matters.}\\
-  \textsc{2013 -- 2014} & \footnotesize{\textbf{President}: Held weekly meetings, carried out various administrative tasks.}\\
-  \textsc{2012 -- 2013} & \footnotesize{\textbf{Tech coordinator}: Administered small servers, deployed a surveillance system.}\\
+                     & \footnotesize {Investigated security issues involving memory integrity in embedded devices, including IoT applications.}\\
   \multicolumn{2}{c}{} \\
 
   \emph{2013 -- 2015} & \textbf{Undergraduate T.A.} in undergraduate classes at Unicamp \\
@@ -111,13 +105,19 @@ I'm eager to work on high performance (possibly parallel) software, especially w
   \textsc{Fall 2013} & \footnotesize{Data Structures, under \href{http://ic.unicamp.br/~gpt/}{\emph{Prof. Guilherme P. Telles}}}\\
   \multicolumn{2}{c}{}\\
 
+  \emph{2012 -- 2015} & Various positions at \href{http://www.caco.ic.unicamp.br}{CACo} \footnotesize{(the Computing Students' Union at Unicamp)} \\
+  \textsc{2014 -- 2015} & \footnotesize{\textbf{Financial coordinator}: Handled bookkeeping and financial matters.}\\
+  \textsc{2013 -- 2014} & \footnotesize{\textbf{President}: Held weekly meetings, carried out various administrative tasks.}\\
+  \textsc{2012 -- 2013} & \footnotesize{\textbf{Tech coordinator}: Administered small servers, deployed a surveillance system.}\\
+  \multicolumn{2}{c}{} \\
+
 \end{tabular}
 
- \section{Languages}
+\section{Languages}
 
- \begin{tabularx}{\textwidth}{rXr}
-   \textbf{English:} & Fluent. \\
-   \textbf{Portuguese:} & Native language.\\
- \end{tabularx}
+\begin{tabularx}{\textwidth}{rXr}
+  \textbf{English:} & Fluent. \\
+  \textbf{Portuguese:} & Native language.\\
+\end{tabularx}
 
 \end{document}
